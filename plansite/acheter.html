@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vente de Plans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nos Plans</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="acheter.html">Acheter un plan</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="plans">
+      <h2>Nos Plans</h2>
+      <div class="products">
+        <div class="product" data-name="Plan Maison Moderne" data-price="50000">
+          <img src="https://via.placeholder.com/300x200" alt="Plan Maison Moderne">
+          <h3><a href="detail.html">Plan Maison Moderne</a></h3>
+          <p class="price">50 000 CFA</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="product" data-name="Plan Appartement" data-price="35000">
+          <img src="https://via.placeholder.com/300x200" alt="Plan Appartement">
+          <h3>Plan Appartement</h3>
+          <p class="price">35 000 CFA</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="product" data-name="Plan Villa" data-price="80000">
+          <img src="https://via.placeholder.com/300x200" alt="Plan Villa">
+          <h3>Plan Villa</h3>
+          <p class="price">80 000 CFA</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Panier</h2>
+      <ul id="cart-items"></ul>
+      <p>Total : <span id="cart-total">0</span> CFA</p>
+      <button id="checkout" disabled>Valider la commande</button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Nom" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Vente de Plans
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
